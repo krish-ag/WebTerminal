@@ -14,8 +14,8 @@ from tornado.options import define, options, parse_command_line
 from tornado.util import errno_from_exception
 
 
-define('address', default='127.0.0.1', help='listen address')
-define('port', default=8888, help='listen port', type=int)
+define('address', default='0.0.0.0', help='listen address')
+define('port', default=8000, help='listen port', type=int)
 
 
 BUF_SIZE = 1024
