@@ -163,8 +163,8 @@ class IndexHandler(tornado.web.RequestHandler):
 
     def get_value(self, name):
         value = self.get_argument(name)
-        if not value:
-            raise ValueError('Empty {}'.format(name))
+##        if not value:
+##            raise ValueError('Empty {}'.format(name))
         return value
 
     def get_args(self):
